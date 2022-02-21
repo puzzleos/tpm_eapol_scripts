@@ -62,7 +62,8 @@ trap '(rm -rf $tdir)' EXIT
 #
 # nvindex for the secret
 
-# NOTE: this policy file must be signed afterwards
+# NOTE: this policy file must be signed afterwards using the
+# secret-policy signing pubkey
 pol_secret="./tpm_secret.policy"
 
 notice "creating TPM_NV_SECRET policy"
