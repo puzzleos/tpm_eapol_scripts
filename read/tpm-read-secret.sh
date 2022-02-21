@@ -71,7 +71,7 @@ trap '(rm -rf $tdir)' EXIT
 #
 # load the public signing key into the tpm
 
-notice "loading tpm ea policy public key"
+notice "loading secret-reading tpm ea policy public key"
 tpm2_loadexternal -C o -G $TPM_POL_PUBKEY_ALG -u $pubkey_file \
 	-c $tdir/pubkey_ctx_a -n $tdir/pubkey_name_a
 error_check $? "unable to load the public signing key($pubkey_file)"

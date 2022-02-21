@@ -62,7 +62,8 @@ trap '(rm -rf $tdir)' EXIT
 #
 # nvindex for the TPM administrative password
 
-# NOTE: this policy file must be signed afterwards
+# NOTE: this policy file must be signed afterwards using the
+# password-policy signing pubkey
 pol_passwd="./tpm_passwd.policy"
 
 notice "creating TPM_NV_PASSWD policy"
